@@ -1,4 +1,4 @@
-require('dotenv').config()
+require("dotenv").config();
 
 const express = require("express");
 const cors = require("cors");
@@ -18,8 +18,33 @@ app.use("/iOS", iosRoute);
 app.use("/samsung", samsungRoute);
 
 app.get("/", (req, res) => {
-  res.send("ads")
-})
+  res.json({
+    iOS: [
+      {
+        title: "Fingerprint iPhones",
+        endpoint: "iOS/iPhones/fingerprint",
+      },
+      {
+        title: "Fingerprint iPads",
+        endpoint: "iOS/iPads/fingerprint",
+      },
+      {
+        title: "Headphone iPads",
+        endpoint: "iOS/iPads/headphone",
+      },
+      {
+        title: "Cellular iPads",
+        endpoint: "iOS/iPads/cellular",
+      },
+    ],
+    Samsung: [
+      {
+        title: "Headphone Samsung",
+        endpoint: "samsung/headphone",
+      },
+    ],
+  });
+});
 
 app.listen(PORT, () => {
   console.log(`App is running`);
