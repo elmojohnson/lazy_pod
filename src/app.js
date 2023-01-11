@@ -22,25 +22,25 @@ app.get("/", (req, res) => {
     iOS: [
       {
         title: "Fingerprint iPhones",
-        endpoint: "iOS/iPhones/fingerprint",
+        endpoint: "/iOS/iPhones/fingerprint",
       },
       {
         title: "Fingerprint iPads",
-        endpoint: "iOS/iPads/fingerprint",
+        endpoint: "/iOS/iPads/fingerprint",
       },
       {
         title: "Headphone iPads",
-        endpoint: "iOS/iPads/headphone",
+        endpoint: "/iOS/iPads/headphone",
       },
       {
         title: "Cellular iPads",
-        endpoint: "iOS/iPads/cellular",
+        endpoint: "/iOS/iPads/cellular",
       },
     ],
     Samsung: [
       {
         title: "Headphone Samsung",
-        endpoint: "samsung/headphone",
+        endpoint: "/samsung/headphone",
       },
     ],
   });
