@@ -17,6 +17,10 @@ app.use(cors());
 app.use("/iOS", iosRoute);
 app.use("/samsung", samsungRoute);
 
+app.get("/", (req, res) => {
+  res.send("ads")
+})
+
 app.listen(PORT, () => {
   console.log(`App is running`);
 });
