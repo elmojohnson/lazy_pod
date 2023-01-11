@@ -1,8 +1,10 @@
 # Lazy Pod
 
 ## About
-A web scraper that gets data from GSM Arena.
+An API for filtering diagnostic tests.
 
-## Use cases
-- Get all iPhones that only supports Face ID
-- Get all cellular version iPads
+## Technology used
+- Node JS
+- Express JS
+- Puppeteer (Web Scraping library)
+- Render (Hosting)
